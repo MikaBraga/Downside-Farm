@@ -1,3 +1,4 @@
+/* Base */
 
 body{
     font-family:roboto, sans-serif;
@@ -7,13 +8,43 @@ body{
     margin:0;
 }
 
+
+/* Shared sections */
+
 .header,
 .hero,
+.footer,
 .background{
     background-color: #1F2937;
-      padding:0 200px;
+    padding:0 200px;
     margin:0;
 }
+
+
+/* Header */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size:24px;
+    color:#F9FAF8;
+    font-weight: 700;
+    flex-shrink:25%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+}
+
+
+/* Hero */
 
 .hero{
     display:flex;
@@ -31,28 +62,52 @@ body{
     justify-content: space-around;
 }
 
-.title{
-
-    font-size: 36px;
-    color:#1f2937;
+.heroTitle{
+    font-size:48px;
+    color:#f9faf8;
     weight:900;
-    display: flex;
-     justify-content: center;
-    align-items: center;
-    padding:40px;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.heroText{
+    color: #e5e7eb;
 }
 
 img{
     max-width:600px;
     display:block;
+}
 
+
+/* Services title */
+
+.title{
+    font-size: 36px;
+    color:#1f2937;
+    weight:900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+}
+
+
+/* Services */
+
+.content{
+    display: flex;
+    background-color: #ffffff;
+    padding: 100px 300px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display:flex;
+    flex: 1 1 300px;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
 }
 
 .imgBox{
@@ -67,54 +122,97 @@ img{
     justify-content: center;
     align-items: center;
     flex-shrink: 1;
+    margin-bottom: 8px;
 }
 
-.logo{
+.textCard{
+    max-width: 200px;
+    text-align: center;
+}
+
+/* Quote */
+
+.quoteBox{
+    background-color: #e5e7eb;
+    padding: 80px 300px;
+}
+
+.quoteText{
+    font-size: 36px;
+    color: #1f2937;
+    weight:300;
+    font-style: italic;
+}
+
+.quoteCustomer{
+    display:flex;
     font-size:24px;
-    color:#F9FAF8;
-    font-weight: 700;
-    flex-shrink:25%;
+    font-weight: 900;
+    justify-content: flex-end;
+    padding: 0 8px;
 }
 
-.content{
+
+/* Call to action */
+
+.callBox{
+    display:flex;
+    background-color:#3882f6;
+    border-radius: 8px;
+    padding:50px;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+}
+
+.signUpText{
+    color: #e5e7eb;
+}
+
+.buttonCall{
+    color:#ffffff;
+    background-color:transparent;
+    font-family: Roboto, sans-serif;
+    border:2px solid #ffffff;
+    border-radius: 8px;
+    font-weight:700;
+    padding: 8px 24px;
+}
+
+
+/* Footer */
+
+.footer{
     display: flex;
-    padding: 0 300px;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    padding:24px;
 }
 
-.infoBox{
-    direction: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+.footerText{
+    color: #e5e7eb;
 }
 
-.heroTitle{
-    font-size:48px;
-    color:#f9faf8;
-    weight:900;
-}
 
-.links{
-    display: flex;
-    flex-direction: row;
-    gap:12px;
-}
+/* Lists / text */
 
 ul,
-.heroText{
+.heroText,
+.signUpText,
+.footerText{
     text-decoration: none;
     list-style-type: none;
     color: #e5e7eb;
 }
 
-
 a{
     text-decoration: none;
     font-size:18px;
 }
+
+
+/* Buttons */
 
 button{
     color:#ffffff;
