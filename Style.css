@@ -1,3 +1,4 @@
+
 body{
     font-family:roboto, sans-serif;
     min-height: 100vh;
@@ -10,19 +11,35 @@ body{
 .hero,
 .background{
     background-color: #1F2937;
-      padding:0 100px;
+      padding:0 200px;
     margin:0;
 }
 
 .hero{
-    display: flex;
-    padding: 100px;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 80px 200px;
     flex-direction: row;
+    gap:100px;
+    justify-content: space-between;;
 }
 
 .container{
-    display: flex;
     flex-direction: column;
+    flex: 1 1 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title{
+
+    font-size: 36px;
+    color:#1f2937;
+    weight:900;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    padding:40px;
 }
 
 .header{
@@ -33,13 +50,45 @@ body{
 }
 
 img{
-    width:600px;
+    max-width:600px;
+    display:block;
+
+}
+
+.imgBox{
+    width:200px;
+    height:200px;
+    border: #3882f6;
+    border-radius: 18px;
+    border-style: solid;
+    border-width:4px;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
 }
 
 .logo{
     font-size:24px;
     color:#F9FAF8;
     font-weight: 700;
+    flex-shrink:25%;
+}
+
+.content{
+    display: flex;
+    padding: 0 300px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.infoBox{
+    direction: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 .heroTitle{
@@ -75,5 +124,5 @@ button{
     border:none;
     border-radius: 8px;
     font-weight:700;
-    flex-grow: 0;
+    margin-bottom:20px
 }
