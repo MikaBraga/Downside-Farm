@@ -97,31 +97,28 @@ img{
     display: flex;
     background-color: #ffffff;
     padding: 100px 300px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .card{
     display:flex;
+    flex-direction: column;
     flex: 1 1 300px;
+    width:200px;
     align-items: center;
-    justify-items: center;
     flex-wrap: wrap;
 }
 
 .imgBox{
+    display: flex;
+    flex-shrink: 1;
     width:200px;
     height:200px;
-    border: #3882f6;
+    border:5px solid #3882f6;
     border-radius: 18px;
-    border-style: solid;
-    border-width:4px;
     overflow: hidden;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 1;
     margin-bottom: 8px;
 }
 
@@ -163,6 +160,7 @@ img{
     justify-content: space-between;
     align-items: center;
     flex:1;
+    margin:100px -100px;
 }
 
 .signUpText{
